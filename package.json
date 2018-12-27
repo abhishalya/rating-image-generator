@@ -1,0 +1,14 @@
+{
+  "name": "rating-image-generator",
+  "version": "1.0.0",
+  "description": "This will geenrate an image based on your rating on programming sites.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "abhishalya",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
