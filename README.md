@@ -1,5 +1,7 @@
 # Rating image generator
 
+![build_status](https://travis-ci.org/abhishalya/rating-image-generator.svg?branch=master)
+
 This is one of the fun projects I tried. Basically, I needed a badge of my ratings on the sites like [CodeChef](https://codechef.com) and [Codeforces](https;//codeforces.com). The application will generate a PNG image based on the data you provide.
 
 ## How to use the application
