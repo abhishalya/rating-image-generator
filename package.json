@@ -4,11 +4,27 @@
   "description": "This will geenrate an image based on your rating on programming sites.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "coala --non-interactive"
   },
   "author": "abhishalya",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.16.4"
+  "dependencies": {},
+  "eslintConfig": {
+    "env": {
+      "amd": true,
+      "jquery": true,
+      "node": true
+    },
+    "globals": {
+      "Image": true,
+      "Canvas2Image": true
+    }
+  },
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^5.11.1",
+    "express": "^4.16.4",
+    "htmllint": "^0.7.3"
   }
 }

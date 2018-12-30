@@ -3,9 +3,8 @@ $('#myform').submit(function(event){
   $.each($('#myform').serializeArray(), function(i, field) {
     values[field.name] = field.value;
   });
-  console.log(values);
   event.preventDefault();
-  var tCan = $('#textCanvas')[0].getContext('2d');
+  var tCan = $('#text-canvas')[0].getContext('2d');
   tCan.font = '23px Arial';
   var txt = values['handle'];
   var img_width = tCan.measureText(txt).width;
@@ -13,9 +12,8 @@ $('#myform').submit(function(event){
   tCan.font = '23px Arial';
   tCan.fillStyle = values['color'];
   tCan.fillText(txt, 0, 35);
-  console.log(tCan.canvas.toDataURL());
   var img_src = tCan.canvas.toDataURL();
-  var iCan = $('#imgCanvas')[0].getContext('2d');
+  var iCan = $('#img-canvas')[0].getContext('2d');
   iCan.canvas.width = 140 + img_width;
   var img1 = new Image();
   var img2 = new Image();
@@ -26,8 +24,6 @@ $('#myform').submit(function(event){
     img2.src = img_src;
     img2.onload = function() {
       iCan.drawImage(img2, 140, 0);
-      var final_img = iCan.canvas.toDataURL();
-      console.log(final_img);
       Canvas2Image.saveAsPNG(iCan.canvas);
     };
   };

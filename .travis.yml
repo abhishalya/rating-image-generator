@@ -1,0 +1,24 @@
+sudo: required
+language: node_js
+node_js:
+  - 'node'
+  - '6'
+addons:
+  apt:
+    sources:
+      - deadsnakes
+    packages:
+      - python3.6-dev
+before_install:
+  - wget https://bootstrap.pypa.io/get-pip.py
+  - sudo python3.6 get-pip.py
+  - python3.6 -V
+  - pip3 -V
+install:
+  - npm install
+  - sudo pip3 install git+https://github.com/coala/coala#egg=coala
+  - sudo pip3 install coala-bears
+script:
+  - npm test
+notifications:
+  email: false

@@ -1,0 +1,26 @@
+[all]
+ignore = node_modules/**, .git/**,
+         public/canvas2image.js
+max_line_length = 80
+indent_size = 2
+use_spaces = True
+
+[all.javascript]
+bears = ESLintBear
+files = **.js
+
+[all.html]
+bears = HTMLLintBear
+files = **.html
+
+[all.css]
+bears = CSSLintBear
+files = **.css
+
+[all.json]
+bears = JSONFormatBear
+files = **.json
+
+[all.yaml]
+bears = YAMLLintBear
+files = **.yml

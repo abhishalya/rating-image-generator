@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Create image</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="canvas2image.js"></script>
-  </head>
-  <body>
-    <form id="myform">
-      <h5>Site:</h5>
-      <input type="radio" name="site" value="1" checked> CodeChef
-      <input type="radio" name="site" value="2"> Codeforces
-      <h5>Handle name:</h5>
-      <input type="text" name="handle" value="handle">
-      <h5>Color:</h5>
-      <input type="radio" name="color" value="gray" checked> Grey <br>
-      <input type="radio" name="color" value="green"> Green <br>
-      <input type="radio" name="color" value="#03A89E"> Cyan <br>
-      <input type="radio" name="color" value="blue"> Blue <br>
-      <input type="radio" name="color" value="#a0a"> Purple <br>
-      <input type="radio" name="color" value="#ffbf00"> Yellow <br>
-      <input type="radio" name="color" value="#FF8C00"> Orange <br>
-      <input type="radio" name="color" value="red"> Red <br>
-      <input type="submit" value="Go">
-    </form>
-    <canvas id="textCanvas" height="50px"></canvas> <br>
-    <canvas id="imgCanvas" height="50px"></canvas>
-  </body>
-  <script src="main.js"></script>
-</html>
+<meta charset="utf-8">
+<title>Create image</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="//fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="canvas2image.js"></script>
+<form id="myform">
+  <h5>Site:</h5>
+  <input type="radio" name="site" value="1" checked> CodeChef
+  <input type="radio" name="site" value="2"> Codeforces
+  <h5>Handle name:</h5>
+  <input type="text" name="handle" value="handle">
+  <h5>Color:</h5>
+  <input type="radio" name="color" value="gray" checked> Grey <br>
+  <input type="radio" name="color" value="green"> Green <br>
+  <input type="radio" name="color" value="#03A89E"> Cyan <br>
+  <input type="radio" name="color" value="blue"> Blue <br>
+  <input type="radio" name="color" value="#a0a"> Purple <br>
+  <input type="radio" name="color" value="#ffbf00"> Yellow <br>
+  <input type="radio" name="color" value="#FF8C00"> Orange <br>
+  <input type="radio" name="color" value="red"> Red <br>
+  <input type="submit" value="Go">
+</form>
+<canvas id="text-canvas" height="50px"></canvas> <br>
+<canvas id="img-canvas" height="50px"></canvas>
+<script src="main.js"></script>
